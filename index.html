@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <div class="landing">
+      <nav>
+        <h1 class="logo" data-target="#home">My<span>Task</span></h1>
+        <div class="signNav">
+          <p>Register</p>
+          <p>Login</p>
+        </div>
+      </nav>
+      <div class="landingBody">
+        <div class="landingText">
+          <h2 class="landingHead">
+            Your work flow is unique, simplify it in one place
+          </h2>
+          <p class="landingPara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            fugit ratione officiis itaque, aperiam quibusdam iure quas ipsum
+            optio molestias. Dignissimos quia amet ipsum quam voluptas
+            praesentium officia, necessitatibus eligendi.
+          </p>
+          <span class="landingSpan">Get started</span>
+        </div>
+        <div class="landingImg">
+          <img src="Images/working2.png" alt="" class="drawing" />
+          <img src="Images/workout.png" alt="" class="drawing" />
+          <img src="Images/coding.png" alt="" class="drawing" />
+          <img src="Images/finance.png" alt="" class="drawing" />
+          <img src="Images/socials.png" alt="" class="drawing" />
+          <img src="Images/education.png" alt="" class="drawing" />
+          <div class="ball1"></div>
+          <div class="ball2"></div>
+        </div>
+        <div class="auth">
+          <div class="register">
+            <form action="">
+              <label for="registerName">Username</label>
+              <input type="text" name="" id="registerName" />
+              <label for="registerPassword">Password</label>
+              <input type="password" name="" id="registerPassword" />
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" name="" id="confirmPassword" />
+              <div class="signBtns">
+                <button type="button" class="cancelBtn">Cancel</button>
+                <button type="button" class="registerBtn">Register</button>
+              </div>
+            </form>
+          </div>
+          <div class="login">
+            <form action="">
+              <label for="loginName">Username</label>
+              <input type="text" name="" id="loginName" />
+              <label for="loginPassword">Password</label>
+              <input type="password" name="" id="loginPassword" />
+              <div class="signBtns">
+                <button type="button" class="cancelBtn">Cancel</button>
+                <button type="button" class="loginBtn">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard">
+      <nav>
+        <h1 class="logo" data-target="#home">My<span>Task</span></h1>
+        <div class="search">
+          <i class="fi fi-rr-search"></i>
+          <input type="text" name="" id="search" placeholder="Search Tasks" />
+        </div>
+        <p class="logout">Logout<i class="fi fi-br-exit"></i></p>
+      </nav>
+      <div class="container">
+        <div class="side"></div>
+        <div class="mainWrapper">
+          <div class="main">
+            <div class="screen">
+              <div class="panel">
+                <div class="taskScreen active" id="home">
+                  <div class="title"></div>
+                  <ul class="list">
+                    <!-- <li>
+                      <i class="fi fi-br-square"></i>
+                      <div class="text">
+                        <p>Wash car 1</p>
+                        <p>date year</p>
+                      </div>
+                      <i class="fi fi-br-trash"></i>
+                    </li> -->
+                  </ul>
+                </div>
+                <div class="right">
+                  <h3>Good Morning,</h3>
+                  <h2>Rosie</h2>
+                  <p>You have a total of <span class="taskNum"></span> tasks</p>
+                  <i class="fi fi-sr-plus"></i>
+                </div>
+                <div class="toastBackdrop">
+                  <div class="toast">
+                    <p>Delete this task?</p>
+                    <div class="delOptions">
+                      <span>Delete</span>
+                      <span>Cancel</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="taskBackdrop">
+                  <div class="addTask">
+                    <h2>New Task</h2>
+                    <input
+                      type="text"
+                      name=""
+                      id="taskInput"
+                      placeholder="Enter Task"
+                    />
+                    <button type="button" class="addTaskBtn">Add</button
+                    ><button type="button" class="cancelAddTask">cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
